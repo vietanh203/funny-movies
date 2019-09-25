@@ -87,7 +87,7 @@ class App extends Component {
             name="email"
             value={email}
             onChange={this.onChange}
-          />
+            required />
           <span>  </span>
           <input
             type="password"
@@ -95,7 +95,7 @@ class App extends Component {
             name="password"
             value={password}
             onChange={this.onChange}
-          /><span> </span>
+            required /><span> </span>
           <input type="submit" value="Login/Register" />
         </form>;
     }
@@ -106,7 +106,7 @@ class App extends Component {
           <form onSubmit={this.onSubmitShare}>
             <fieldset class="border p-5">
               <legend class="w-auto">Share a youtube movie:</legend>
-              Youtube URL: <input type="text" style={{ width: '240px'}} name="url" value={url} onChange={this.onChange} /><br />
+              Youtube URL: <input type="text" style={{ width: '240px' }} name="url" value={url} onChange={this.onChange} /><br />
               <input type="submit" value="Share" style={{ marginLeft: '23%', marginTop: '20px', width: '240px' }} ></input>
             </fieldset>
           </form>
